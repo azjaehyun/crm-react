@@ -1,0 +1,61 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.MuiMenuItem-root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+    font-size: 14px !important;
+}
+
+.MuiSvgIcon-root {
+    font-size: 1.2rem !important;
+}
+
+.MuiDrawer-root {
+    background-color: #26344a;
+}
+
+.makeStyles-root-132 {
+    height: 100vh !important;
+    margin-bottom: -48px;
+    /*height: 100% !important;*/
+}
+
+.ant-tabs-content {
+    margin-left: 0px !important;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.RaLayout-content-4, .RaLayout-content-358 {
+    background-color: #fff;
+    padding: 0 !important;
+}
+
+
+
+
+

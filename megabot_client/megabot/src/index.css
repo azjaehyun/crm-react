@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*font-family: sans-serif;*/
+}
+
+
+
+.MuiInputBase-input.MuiInput-input {
+    color: #d8e0ec;
+    border-bottom: 2px solid #d8e0ec;
+}
+.MuiInputLabel-shrink.MuiFormLabel-filled {
+    color: #3f51b5;
+}
+/*
+.selected {
+    color: #1890FF !important;
+    background-color: #E6F7FF !important;
+    border-color: #91D5FF !important;
+}
+*/
+
+.focused {
+    display: block !important;
+}
+
+.mz-btn {
+    min-width: 80px;
+}
+
+.mz-link-btn {
+    border: 0px;
+    box-shadow: none;
+    padding: 3px 6px;
+    background-color: transparent;
+}
+
+.mz-link-btn:hover {
+    /*background-color: #f4f7fa;*/
+}
+
+.mz-link-btn span[role='img'] {
+    color: #1890ff;
+}
+
+.mz-drawer-btn-footer {
+    /*text-transform: uppercase;*/
+}
+
+.ant-layout-content {
+    background: #fff;
+}
+
+.mz-bot-sider {
+    border-right: 1px solid #f0f0f0;
+    background-color: #f4f7fa;
+}
+
+.mz-bot-sider .ant-menu-inline {
+    border-right: none;
+}
+
+.mz-bot-sider .ant-menu {
+    background-color: #f0f2f5;
+}
+
+.scrollbar-thumb-vertical {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.scrollbar-thumb-vertical:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scrollbar-thumb-vertical--project-menu {
+    background-color: #8a959f;
+    border-radius: 3px;
+}
+
+
+.project-sort-list {
+    padding-left: 32px;
+}
+
+.project-sort-list.checked {
+     padding-left: 12px;
+}
+
+.fullscreen {
+    height: 100%;
+}
+
+.fullscreen-enabled {
+    background-color: #fff;
+}
+
+
+.step_if_tag {
+    padding: 3px 12px;
+    background-color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.and_label {
+    color: rgba(0,0,0,0.55);
+    font-size: 11px;
+    margin-right: 8px;
+}
+
+step-block-or-label {
+
+}
+
+.step_add_cond_btn {
+    margin-right: 4px;
+    font-size: 11px;
+    border-radius: 2px;
+    color: #1890ff;
+}
+
+.form-label-header {
+    display: block;
+    font-size: 12px;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    background-color: rgba(0,0,0,0.06);
+}
+

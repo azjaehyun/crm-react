@@ -1,0 +1,10 @@
+.appbar-title {
+  flex: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.appbar-spacer {
+  flex: 1;
+}

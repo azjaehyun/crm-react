@@ -1,0 +1,66 @@
+.dashboard-container {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  background: #E5E8EC;
+  color: #E1E1E1;
+  padding: 10px;
+
+  .dashboard-header {
+    background: #E5E8EC;
+  }
+
+  .dashboard-body {
+    display: flex;
+    margin-top: 10px;
+
+    .card-title {
+      font-size: 14px;
+    }
+
+    .left {
+      flex: 1 1 0%;
+      margin-right: 10px;
+    }
+
+    .right {
+      flex: 1 1 0%;
+
+      .msg-label {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .msg-cnt {
+        float: right;
+        padding: 0 7px;
+        border-radius: 5px;
+        width: 30px;
+        text-align: center;
+        font-size: 13px;
+
+        &.welcome {
+          color: #1890FF;
+          background: #E6F7FF;
+          border: 1px solid #91D5FF;
+        }
+
+        &.not-understand {
+          color: #722ED1;
+          background: #F9F0FF;
+          border: 1px solid #D3ADF7;
+        }
+      }
+    }
+
+    .intent-list {
+      .ant-spin-container {
+        height: 116px;
+      }
+    }
+  }
+
+}

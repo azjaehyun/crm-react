@@ -1,0 +1,81 @@
+.projects-container {
+  padding: 0px 0px 50px 0px;
+
+  .projects-contents {
+    background-color: #FFF;
+
+    .my-project-container, .shared-container, .recycle-bin-container {
+      padding: 16px;
+      .project-list-item {
+        margin-bottom: 10px;
+        .project-card {
+          border: 1px solid rgb(225, 228, 232);
+          box-shadow: 0 2px 0 rgba(27, 31, 35, .05);
+          border-radius: 4px;
+
+          &:hover {
+            //border-color: #1890FF;
+            background-color: #f4f7fa; //#e6f7ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mz-tag {
+  .mz-tag-content {
+    height: 100%;
+    display: inline-block;
+    border-left: 1px solid #d9d9d9;
+    padding-left: 7px;
+  }
+}
+
+.mz-tag-white {
+  background: #fff;
+
+  span[role=img] {
+    color: #bdbdbd;
+  }
+}
+.create-my-project {
+  .bot-type-card {
+    width: 160px;
+    height: 160px;
+    overflow:hidden;
+    display: inline-block;
+    margin-top: 10px;
+
+    &.selected {
+      border-color: #91D5FF;
+
+      .ant-card-body {
+        .ant-card-meta-title {
+          color: #1890FF;
+        }
+      }
+    }
+
+    .ant-card-cover {
+      text-align: center;
+      padding: 10px 0;
+
+      img {
+        width: 80px;
+        height: 80px;
+        display: initial;
+      }
+    }
+
+    .ant-card-body {
+      padding: 0px;
+
+      .ant-card-meta-title {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}
+

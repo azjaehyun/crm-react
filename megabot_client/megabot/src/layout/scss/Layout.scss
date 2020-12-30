@@ -1,0 +1,38 @@
+body {
+  font-size: 13px;
+}
+
+.layout-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 280px;
+  background-color: #EEE;
+
+  &.left {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    color: #1890FF;
+    background-color: #E6F7FF;
+    border-color: #91D5FF;
+  }
+}
+
+.card-icon {
+  font-size: 28px;
+}
+
+.RaLayout-content-4 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.MuiTypography-h6 {
+  font-size: 1rem !important;
+}

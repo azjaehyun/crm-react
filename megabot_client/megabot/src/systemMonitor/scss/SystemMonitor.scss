@@ -1,0 +1,36 @@
+.server-status-card {
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 0px !important;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0, 0.1);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0, 0.1);
+  box-shadow: 0 6px 6px -6px rgba(0,0,0, 0.1);
+
+
+  &.unavailable {
+    border-top: 3px solid #fa541c !important;
+    .ant-card-head {
+      //background-color: #fff2e8;
+    }
+  }
+
+  &.available {
+    border-top: 3px solid #52c41a !important;
+  }
+
+  &.unknown {
+    border-top: 3px solid darkgoldenrod !important;
+  }
+}
+
+#system-log-table {
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+}
+
+.system-log-sort-menu {
+  padding-left: 32px !important;
+}
+
+.system-log-sort-menu.checked {
+  padding-left: 12px !important;
+}

@@ -1,0 +1,19 @@
+.chat-bot-contents {
+  background-color: #FFF;
+
+  &:hover {
+    color: #1890FF;
+    background-color: #E6F7FF;
+    border-color: #91D5FF;
+  }
+}
+
+.remove-project-modal {
+  .ant-modal-body {
+    height: 70px;
+  }
+}
+
+.project-list {
+   padding: 0px;
+}

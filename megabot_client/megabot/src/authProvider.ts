@@ -8,21 +8,21 @@ const encodeFormData = ({ data }: { data: any }) => {
 };
 
 const authProvider: AuthProvider = {
-    login: ({ username, password }) => {
+    login: ({ username, password, rememberMe }) => {
         let formData = {
             username: username,
             password: password,
-            rememberMe: 'undefined',
+            rememberMe: rememberMe,
         };
 
-        const request = new Request(`${process.env.REACT_APP_MEGA_DIALOGFLOW_API_URL}/auth`, {
+        const request = new Request(`${process.env.REACT_APP_MEGA_DIALOGFLOW_API_URL}/api/authenticate`, {
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/json;charset=UTF-8',
                 Accept: 'application/json',
             },
             method: 'POST',
             // body: JSON.stringify({ username, password }),
-            body: encodeFormData({ data: formData }),
+            body: JSON.stringify(formData),
         });
 
         let promise = fetch(request)
@@ -32,12 +32,12 @@ const authProvider: AuthProvider = {
                 }
                 return response.json();
             })
-            .then(({ token }) => {
-                localStorage.setItem('token', token);
+            .then(({ id_token }) => {
+                localStorage.setItem('token', id_token);
                 localStorage.setItem('jhi-userlang-admin', 'ko');
                 localStorage.setItem('loglevel:webpack-dev-server', 'INFO');
 
-                const accessInfo = new Request(`${process.env.REACT_APP_MEGA_DIALOGFLOW_API_URL}/auth/info`, {
+                const accessInfo = new Request(`${process.env.REACT_APP_MEGA_DIALOGFLOW_API_URL}/account`, {
                     method: 'GET',
                     headers: new Headers({
                         'Content-Type': 'application/json',

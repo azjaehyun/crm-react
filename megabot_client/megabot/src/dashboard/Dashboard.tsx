@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 
-import './backup/scss/dashboard.scss';
+//import './backup/scss/dashboard.scss';
 import GlobalDashboard from './GlobalDashboard/GlobalDashboard';
 import BotDashboard from './BotDashboard/BotDashboard';
 import Title from 'antd/es/typography/Title';
@@ -10,36 +10,8 @@ import { Switch } from 'antd';
 const Dashboard: FC = () => {
     const [isAdmin, setIsAdmin] = useState<boolean>(true);
     return (
-        <div style={{ backgroundColor: '#eee', minHeight: window.innerHeight - 48 + 'px' }}>
-            <Container>
-                <div style={{ maxWidth: 1200 }}>
-                    {/*<Title style={{padding: 10, marginBottom: 5}}>Dashboard</Title>*/}
-                    {/*TODO: confirm admin*/}
-                    {/*=========================================================*/}
-                    <div
-                        style={{
-                            width: '100%',
-                            textAlign: 'right',
-                            opacity: 0.25,
-                        }}
-                    >
-                        <span>{'(isAdmin: '}</span>
-                        <span>
-                            <Switch
-                                checked={isAdmin}
-                                onChange={() => {
-                                    setIsAdmin(!isAdmin);
-                                }}
-                            />
-                        </span>
-                        <span>{')'}</span>
-                        <br />
-                    </div>
-                    {/*=========================================================*/}
-                    {isAdmin && <GlobalDashboard />}
-                    <BotDashboard />
-                </div>
-            </Container>
+        <div>
+            <div>Dash Board 영역</div>
         </div>
     );
     // const [botList, setBotList] = useState([]);

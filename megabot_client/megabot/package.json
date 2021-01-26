@@ -42,7 +42,9 @@
         "tiny-svg": "^2.2.0",
         "react-mentions": "^4.0.1",
         "@types/react-mentions": "^3.3.0",
-        "react-flow-renderer": "^5.3.1"
+        "react-flow-renderer": "^5.3.1",
+        "material-table" : "^1.69.2"
+      
     },
     "scripts": {
         "analyze": "source-map-explorer 'build/static/js/*.js'",

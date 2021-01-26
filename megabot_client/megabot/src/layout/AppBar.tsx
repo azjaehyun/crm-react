@@ -68,9 +68,10 @@ const CustomAppBar = (props: any) => {
                     style={{
                         fontSize: '25px',
                         fontFamily: 'Roboto',
-                        marginLeft: -30,
+                        marginLeft: -20,
                         marginTop: -17,
                         marginBottom: -9,
+                        height: '80%',
                     }}
                 >
                     <img src={require('./asset/logo.svg')} />

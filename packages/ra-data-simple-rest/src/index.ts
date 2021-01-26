@@ -343,6 +343,8 @@ export default (apiUrl, httpClient = fetchUtils.fetchJson): DataProvider => ({
                 return {
                     status: resp.status,
                     data: resp.json,
+                    headers: resp.headers,
+                    totalCnt: parseInt(resp.headers.get('X-Total-Count')),
                 };
             })
             .catch((error: HttpError) => {

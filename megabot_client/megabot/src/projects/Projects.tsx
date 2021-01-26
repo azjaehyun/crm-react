@@ -20,12 +20,12 @@ const Projects: FC = () => {
                     <Menu.Item key="myProjects" icon={<UserOutlined />}>
                         {translate(`resources.projects.my_projects.title`)}
                     </Menu.Item>
-                    <Menu.Item key="shared" icon={<BranchesOutlined />}>
+                    {/* <Menu.Item key="shared" icon={<BranchesOutlined />}>
                         {translate(`resources.projects.shared.title`)}
                     </Menu.Item>
                     <Menu.Item key="recycleBin" icon={<DeleteOutlined />}>
                         {translate(`resources.projects.recycle_bin.title`)}
-                    </Menu.Item>
+                    </Menu.Item> */}
                 </Menu>
             </div>
             <ProjectContents selectMenu={selectMenu} />

@@ -25,13 +25,16 @@ export const BOT_ERROR_MESSAGES: any = {
 
 export default class BotService {
     static apiURL = process.env.REACT_APP_MEGA_DIALOGFLOW_API_URL;
-    static baseURL = BotService.apiURL + '/bots/';
+    static baseURL = BotService.apiURL + '/corps/';
     static basePath = 'bots/';
 
-    static search(dataProvider: DataProvider, usernameOrId: any, params: object) {
+    // curl -X GET "http://localhost:8080/api/corps?
+    // page=0&size=3&sort=corpCode" -H "accept: */*" -H "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTYxMTU2NjY0M30.NsDRIMyhmTC98KyVzBNJskdzcHQbfw2D0j--QjE4obAPF6w1OHMx-fph_z377zpzOadD82AcvUAGWGkgnBwq1Q"
+
+    static search(dataProvider: DataProvider, queryParam: any, params: object) {
         const request: Request = {
             method: Method.GET,
-            resource: `bots/${usernameOrId}/search`,
+            resource: `api/crm-customs`,
             query: params,
         };
         return dataProvider.execute(request);
